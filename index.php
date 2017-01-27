@@ -9,12 +9,6 @@
   <body>
   <form method="POST">
     <input type="number" name="id_testu">   <br>
-<!--    <input type="text" name="nazwa_testu">   <br>-->
-    <select name="kategoria">
-         <option value="matematyka">Matematyka</option>  
-         <option value="fizyka">Fizyka</option>  
-         <option value="sieci">Sieci</option>  
-      </select> <br>
       <input type="text" name="pytanie">   <br>
       <input type="text" name="odp1">   <br>
       <input type="text" name="odp2">   <br>
@@ -27,11 +21,11 @@
 </html>
 <?php 
 
+session_start();
+
 if(isset($_POST["id_testu"])) {
     
     $id = $_POST["id_testu"];
-    // $nazwa = $_POST["nazwa_testu"];
-    $kategoria = $_POST["kategoria"];
     $pytanie = $_POST["pytanie"];
     $odp1 = $_POST["odp1"];
     $odp2 = $_POST["odp2"];
@@ -39,7 +33,12 @@ if(isset($_POST["id_testu"])) {
     $odp4 = $_POST["odp4"];
     $prawidlowa = $_POST["nr_odp"];
     
-    if(empty($id) || empty($kategoria)  || empty($pytanie) || empty(odp1)|| empty($odp2) || empty($odp3)|| empty($odp4)|| empty($prawidlowa))    {
+    $host = "localhost";
+    $db_user = "root";
+    $db_password = "root";
+    $db_name = "test";
+    
+    if(empty($id) || empty($pytanie) || empty($odp1)|| empty($odp2) || empty($odp3)|| empty($odp4)|| empty($prawidlowa))    {
         echo "Uzupełnij wszystkie pola!";
     } else {
         try 
@@ -52,7 +51,7 @@ if(isset($_POST["id_testu"])) {
 			else
 			  {
 					
-					if ($polaczenie->query("INSERT INTO uzytkownicy VALUES (NULL, '$nick', '$haslo_hash', '$email', 100, 100, 100, 14)"))
+					if ($polaczenie->query("INSERT INTO pytania VALUES(NULL,'$id','$pytanie','$odp1','$odp2','$odp3','$odp4','$prawidlowa')"))
 					{
 						echo "Dodano pomyślnie!";
 					}
