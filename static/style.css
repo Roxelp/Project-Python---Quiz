@@ -1,0 +1,129 @@
+/* quiz2pw/static/style.css */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+@font-face {
+	font-family: "Aldo the Apache";
+	src: url("font/AldotheApache.ttf");
+}
+
+@font-face {
+	font-family: "Graystroke";
+	src: url("font/GRAYSTROKE.otf");
+}
+
+@font-face {
+	font-family: "Norwester";
+	src: url("font/Norwster.otf");
+}
+
+body {
+    background-color: #2d2d2d;
+    
+}
+
+#about {
+	font-family: 'Roboto Slab', serif;
+	width: 70%;
+	color: #eee;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#about h1 {
+	color: #EE7600;
+	font-size: 2.2em;
+	text-decoration: underline;
+}
+
+h2 {
+	border-bottom: 5px solid #EE7600;
+	padding-top: 25px;
+	display:block;
+	font-family: "Aldo the Apache";
+	font-size: 2em;
+}
+
+#quizy {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.quiz {
+	height: 400px;
+	width: 400px;
+	background-color: #EE7600;
+	color: #2d2d2d;
+	text-align: center;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 2px solid #EE7600;
+	box-sizing: border-box;
+	
+}
+
+.quiz_category, .quiz_title {
+	height: 50px;
+	width: 70%;
+	box-sizing: border-box;
+	padding: 10px 0 10px 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Aldo the Apache";
+	font-size: 2em;
+	border-bottom: 3px solid #2d2d2d;
+}
+
+.quiz_title {
+	font-family: "Roboto Slab";
+	border-bottom: none;
+	border-top: 3px solid #2d2d2d;
+	font-size: 1.5em;
+}
+
+.quiz_icon {
+	height: 300px;
+	box-sizing: border-box;
+	width: 70%;
+	font-size: 20em;
+	margin-top: -15px;
+	margin-left: -20px;
+	margin-right: auto;
+}
+
+.quiz:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+	transition: all .2s;
+	background-color: #ff8711;
+	border: 2px solid #eee;
+	box-sizing: border-box;
+	color: #121212;
+}
+
+.quiz:hover .quiz_icon {
+	color: #eee;
+}
+
+#footer {
+	border-top: 5px solid #EE7600;
+	border-bottom: 5px solid #EE7600;
+	margin-top: 50px;
+	padding: 10px 0 10px 0;
+	font-family: "Aldo the Apache";
+	font-size: 2em;
+	color: #EE7600;
+	text-align:center;
+	background-color: #000;
+}
+ 
