@@ -15,9 +15,9 @@ Projekt umożliwiający użytkownikowi sprawdzić swoją wiedzę, z różnych dz
 
 <h1>Uruchamianie</h1>
 Aby uruchomić aplikację
-1. Wejdź do folderu, w którym się znajduje
-2. Otwórz konsole
-3. W konsoli wpisz "python main.py"
+1. Wejdź do folderu, w którym się znajduje <br>
+2. Otwórz konsole <br>
+3. W konsoli wpisz "python main.py" <br>
 4. Otwórz przeglądarkę w wejdz na adres 127.0.0.1:5000
 
 <h2>Znane błędy</h2>
