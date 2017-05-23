@@ -1,2 +1,8 @@
 
 .icon-pi-outline:before { content: '\e800'; } /* '' */
+.icon-database:before { content: '\e801'; } /* '' */
+.icon-book:before { content: '\e802'; } /* '' */
+.icon-book-open:before { content: '\e803'; } /* '' */
+.icon-network:before { content: '\e804'; } /* '' */
+.icon-lightbulb:before { content: '\f0eb'; } /* '' */
+.icon-map-o:before { content: '\f278'; } /* '' */
