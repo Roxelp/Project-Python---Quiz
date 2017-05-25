@@ -146,7 +146,7 @@ def biologia():
 @app.route('/bazy', methods=['GET', 'POST'])
 def bazy():
     if request.method == 'POST':
-        full = 3
+        full = 20
         wynik = 0
         for pid, odp in request.form.items():
             odpok = bazy_pyt.select(bazy_pyt.odpok).where(
