@@ -4,7 +4,7 @@
 from flask import render_template, request, redirect, url_for, flash
 
 from app import app
-from models import matma_odp, matma_pyt, polski_odp, polski_pyt, sieci_odp, sieci_pyt, fizyka_odp, fizyka_pyt, chemia_odp, chemia_pyt, biologia_odp, biologia_pyt, bazy_odp, bazy_pyt, historia_pyt, historia_pyt, geografia_odp, geografia_pyt, angielski_odp, angielski_pyt
+from models import matma_odp, matma_pyt, polski_odp, polski_pyt, sieci_odp, sieci_pyt, fizyka_odp, fizyka_pyt, chemia_odp, chemia_pyt, biologia_odp, biologia_pyt, bazy_odp, bazy_pyt, historia_pyt, historia_odp, geografia_odp, geografia_pyt, angielski_odp, angielski_pyt
 import math
 
 @app.route('/')

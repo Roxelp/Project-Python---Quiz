@@ -3,14 +3,13 @@
 <html>
     <head>
         <title>{% block tytul %}{% endblock %} &#8211; {{ config.TYTUL }}</title>
+        <link rel="stylesheet" href="static/quiz.css?ver=2" />
     </head>
     <body>
         <h1>{% block h1 %}{% endblock %}</h1>
         <div id="menu" class="cb">
         <ul>
             <li><a href="{{ url_for('index') }}">Strona główna</a></li>
-            <li><a href="{{ url_for('matematyka') }}">Matematyka</a></li>
-            <li><a href="{{ url_for('polski') }}">J.polski</a></li>
         </ul>
         </div>
         <div id="komunikaty" class="cb">
