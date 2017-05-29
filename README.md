@@ -23,13 +23,13 @@ Projekt umożliwiający użytkownikowi sprawdzić swoją wiedzę, z różnych dz
 
 <h1>Uruchamianie</h1>
 Aby uruchomić aplikację
-<ul>
+<ol>
 <li>Na początku zainstaluj wymagane bibilioteki komendą "sudo pip install peewee sqlalchemy flask-sqlalchemy"
 <li>Wejdź do folderu, w którym się znajduje <br>
 <li>Otwórz konsole <br>
 <li>W konsoli wpisz "python main.py" <br>
 <li>Otwórz przeglądarkę w wejdz na adres 127.0.0.1:5000
-</ul>
+</ol>
 
 <h2>Znane błędy</h2>
 - złe wyświetalanie procentowego wyniku (liczba nie jest zaokrąglona [nie wiem jak to zrobić :/])
