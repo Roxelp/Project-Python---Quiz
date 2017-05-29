@@ -3,10 +3,17 @@ Grupowy projekt w języku Python
 
 Projekt umożliwiający użytkownikowi sprawdzić swoją wiedzę, z różnych dziedzin nauki rozwiązując testy jednokrotnego wyboru.
 
-<h1>Liczba dostęnych (do tej pory) testów: 4
+<h1>Liczba dostęnych testów</h1>
 
 <h1>Lista dostępnych testów</h1>
-- 4x sieci komputerowe
+<ul>
+<li>sieci komputerow
+<li>biologia
+<li>historia
+<li>matematyka
+<li>bazy danych
+<li>polski
+</ul>
 
 <h1>Wymagania</h1>
 - python 2.7+
