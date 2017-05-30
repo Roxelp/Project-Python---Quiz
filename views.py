@@ -11,17 +11,20 @@ import math
 def index():
     return render_template('index.html')
 
+def sprawdz(cos_pyt):
+	full = cos_pyt.select().count()
+	wynik = 0
+	for pid, odp in request.form.items():
+		odpok = matma_pyt.select(matma_pyt.odpok).where(
+			matma_pyt.id == int(pid)).scalar()
+		if odp == odpok:
+			wynik += 1
+	return full, wynik
 
 @app.route('/matematyka', methods=['GET', 'POST'])
 def matematyka():
     if request.method == 'POST':
-        full = 3
-        wynik = 0
-        for pid, odp in request.form.items():
-            odpok = matma_pyt.select(matma_pyt.odpok).where(
-                matma_pyt.id == int(pid)).scalar()
-            if odp == odpok:
-                wynik += 1
+        full, wynik = sprawdz(matma_pyt)
         pr = wynik * 100 / full
         procent = str(pr) + '%'
         flash(u'Liczba poprawnych odpowiedzi, to: {0}'.format(procent), 'sukces')
