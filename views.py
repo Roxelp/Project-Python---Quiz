@@ -15,8 +15,8 @@ def sprawdz(cos_pyt):
 	full = cos_pyt.select().count()
 	wynik = 0
 	for pid, odp in request.form.items():
-		odpok = matma_pyt.select(matma_pyt.odpok).where(
-			matma_pyt.id == int(pid)).scalar()
+		odpok = cos_pyt.select(cos_pyt.odpok).where(
+			cos_pyt.id == int(pid)).scalar()
 		if odp == odpok:
 			wynik += 1
 	return full, wynik
